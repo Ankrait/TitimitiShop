@@ -210,7 +210,9 @@ if (line_menu.length > 0)
 ///
 ///////////////// Блок редактирования /////////////////
 const menu__items = document.querySelectorAll(".profile__menu .line-menu__item");
-const content__items = document.querySelector(".profile .content").children;
+let content__items = document.querySelector(".profile .content");
+if (content__items)
+    content__items = content__items.children;
 
 if (profile_btn)
     profile_btn.addEventListener("click", () => {
