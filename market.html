@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>TitiMiti.Shop</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container container">
+            <div class="header__logo logo">
+               <a href="index.html" class="desktop">TitiMiti.Shop</a>
+               <a href="index.html" class="mobile">TS</a>
+            </div>
+            <div class="header__search">
+               <input placeholder="Поиск" type="text">
+               <div class="closebtn"></div>
+            </div>
+            <div class="header__menu menu">
+               <a href="collectionZL.html" class="menu__item">Коллекции</a>
+               <a href="another-nft.html" class="menu__item">NFT</a>
+               <a href="market.html" class="menu__item">Продать NFT</a>
+            </div>
+            <div class="header__icons">
+               <img class="header__loop" src="img/header/loop.svg" alt="loop">
+               <img class="header__notification" src="img/header/notification.svg" alt="notification">
+               <img class="header__bag" src="img/header/bag.svg" alt="bag">
+               <img class="header__wallet" src="img/header/wallet.svg" alt="wallet">
+               <a href="profile.html"><img src="img/header/user.svg" alt="user"></a>
+            </div>
+            <div class="burger">
+               <span class="bar-top"></span>
+               <span class="bar-mid"></span>
+               <span class="bar-bot"></span>
+            </div>
+         </div>
+      </header>
+      <main class="main">
+         <div class="main__container container">
+            <div class="wallet">
+               <div class="wallet__body">
+                  <div class="closebtn"></div>
+                  <div class="wallet__title">Мой кошелек</div>
+                  <div class="wallet__number">0xe1C...B3F5</div>
+                  <div class="wallet__value">$0,00 USD</div>
+                  <div class="wallet__button btn white">Пополнить баланс</div>
+                  <div class="wallet__button btn">Выйти из кошелька</div>
+               </div>
+            </div>
+            <div class="notification">
+               <div class="notification__body">
+                  <div class="closebtn"></div>
+                  <div class="notification__title">Уведомления</div>
+                  <div class="notification__items">
+                     <div class="notification__null">
+                        У вас нет<br> уведомлений
+                     </div>
+                     <div class="notification__item">
+                        <div class="notification__name">
+                           Запрос на покупку NFT
+                        </div>
+                        <div class="notification__description">
+                           Вам поступило предложение о покупке NFT из вашей коллекции “Название NFT”.
+                        </div>
+                     </div>
+                     <div class="notification__item">
+                        <div class="notification__name">
+                           Запрос отклонен
+                        </div>
+                        <div class="notification__description">
+                           Владелец “Название NFT” отклонил предложение
+                        </div>
+                     </div>
+                     <div class="notification__item">
+                        <div class="notification__name">
+                           Запрос отклонен
+                        </div>
+                        <div class="notification__description">
+                           Владелец “Название NFT” отклонил предложение
+                        </div>
+                     </div>
+                     <div class="notification__item">
+                        <div class="notification__name">
+                           Вы купили NFT
+                        </div>
+                        <div class="notification__description">
+                           Поздравляем! Вы купили “Название NFT”.
+                        </div>
+                     </div>
+                     <div class="notification__item">
+                        <div class="notification__name">
+                           Вы продали NFT
+                        </div>
+                        <div class="notification__description">
+                           Поздравляем! Вы продали “Название NFT” за $100.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="notification__button btn">Посмотреть все</div>
+               </div>
+            </div>
+            <div class="bag">
+               <div class="bag__body">
+                  <div class="closebtn"></div>
+                  <div class="bag__title">
+                     Корзина
+                     <span class="bag__reset">Очистить</span>
+                  </div>
+                  <div class="bag__items">
+                     <div class="bag__null">
+                        Корзина пуста
+                     </div>
+                     <div class="bag__item">
+                        <div class="bag__image">
+                           <img src="img/popular/01.png" alt="">
+                        </div>
+                        <div class="bag__info">
+                           <div class="bag__name">
+                              Название NFT
+                           </div>
+                           <div class="bag__description">
+                              TitiMiti
+                           </div>
+                           <div class="bag__price">
+                              30.37 <span>ETH</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="bag__item">
+                        <div class="bag__image">
+                           <img src="img/popular/01.png" alt="">
+                        </div>
+                        <div class="bag__info">
+                           <div class="bag__name">
+                              Название NFT
+                           </div>
+                           <div class="bag__description">
+                              TitiMiti
+                           </div>
+                           <div class="bag__price">
+                              30.37 <span>ETH</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="bag__item">
+                        <div class="bag__image">
+                           <img src="img/popular/01.png" alt="">
+                        </div>
+                        <div class="bag__info">
+                           <div class="bag__name">
+                              Название NFT
+                           </div>
+                           <div class="bag__description">
+                              TitiMiti
+                           </div>
+                           <div class="bag__price">
+                              30.37 <span>ETH</span>
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="bag__cost">
+                     Итого <span class="price">31.07</span> <span class="val">ETH</span>
+                  </div>
+                  <div class="bag__button btn white">Купить NFT</div>
+               </div>
+            </div>
+         </div>
+         <div class="market">
+            <div class="market__container container">
+               <ul class="market__menu line-menu">
+                  <li data-menu="nft" class="line-menu__item active">NFT</li>
+                  <li data-menu="collections" class="line-menu__item">Collections</li>
+               </ul>
+               <div data-onmenu="nft" class="market__nft active">
+                  <div class="filter__bg"></div>
+                  <div class="market__filter filter">
+                     <div class="filter__title">Фильтры</div>
+                     <div class="closebtn"></div>
+                     <div class="filter__price">
+                        <div class="filter__btn active">
+                           <p>Цена покупки</p>
+                           <span></span>
+                        </div>
+                        <div class="filter__item active">
+                           <div class="filter__input">
+                              <div>
+                                 <input type="number" min="0" max="1000" value="0" class="filter__price--min">
+                              </div>
+                              <span class="input-line"></span>
+                              <div>
+                                 <input type="number" min="0" max="1000" value="1000" class="filter__price--max">
+                              </div>
+                              <div class="filter__val dropdown">
+                                 <div class="dropdown__main">ETH</div>
+                                 <span></span>
+                                 <div class="dropdown__menu">
+                                    <div class="dropdown__item active">ETH</div>
+                                    <div class="dropdown__item">USD</div>
+                                    <div class="dropdown__item">RUB</div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="filter__slider">
+                              <div class="filter__slider-progress">
+                              </div>
+                              <div class="filter__slider--range">
+                                 <input type="range" class="max-value" step="0.1" value="0" min="0" max="1000">
+                                 <input type="range" class="min-value" step="0.1" value="1000" min="0" max="1000">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="filter__type-nft">
+                        <div class="filter__btn active">
+                           <p>Вид NFT</p>
+                           <span></span>
+                        </div>
+                        <div class="filter__item active">
+                           <div class="filter__checkbox">
+                              <div class="checkbox-item">
+                                 <input type="checkbox" name="type-nft" id="water">
+                                 <label for="water">NFT воды</label>
+                              </div>
+                              <div class="checkbox-item">
+                                 <input type="checkbox" name="type-nft" id="land">
+                                 <label for="land">NFT суши</label>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="filter__collection">
+                        <div class="filter__btn active">
+                           <p>Коллекция</p>
+                           <span></span>
+                        </div>
+                        <div class="filter__item active">
+                           <div class="filter__checkbox">
+                              <div class="checkbox-item">
+                                 <input type="checkbox" name="collection" id="collection1">
+                                 <label for="collection1">NFT</label>
+                              </div>
+                              <div class="checkbox-item">
+                                 <input type="checkbox" name="collection" id="collection2">
+                                 <label for="collection2">NFT</label>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="filter__clear"><span>Очистить</span></div>
+
+                  </div>
+                  <div class="market__sort sort">
+                     <div class="sort__search">
+                        <span>
+                           <img src="img/search.svg" alt="">
+                        </span>
+                        <input type="text" class="input__search" placeholder="Поиск">
+                     </div>
+                     <div class="sort__by dropdown">
+                        <div class="dropdown__main">Сначала новые</div>
+                        <span></span>
+                        <div class="dropdown__menu">
+                           <div class="dropdown__item active">Сначала новые</div>
+                           <div class="dropdown__item">Сначала старые</div>
+                           <div class="dropdown__item">Сначала дешевые</div>
+                           <div class="dropdown__item">Сначала дорогие</div>
+                        </div>
+                     </div>
+                     <div class="sort__filter">Фильтр</div>
+                     <div class="sort__colect dropdown">
+                        <div class="dropdown__main">TitiMiti</div>
+                        <span></span>
+                        <div class="dropdown__menu">
+                           <div class="dropdown__item active">TitiMiti</div>
+                           <div class="dropdown__item">Zoomloupe</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="market__items griditems">
+                     <div class="market__item griditem">
+                        <div class="griditem__image _blue">
+                           <img src="img/market/nft.svg" alt="">
+                        </div>
+                        <div class="griditem__name">
+                           Название NFT
+                        </div>
+                        <div class="griditem__collection">
+                           Название коллекции
+                        </div>
+                     </div>
+                     <div class="market__item griditem">
+                        <div class="griditem__image _blue">
+                           <img src="img/market/nft.svg" alt="">
+                        </div>
+                        <div class="griditem__name">
+                           Название NFT
+                        </div>
+                        <div class="griditem__collection">
+                           Название коллекции
+                        </div>
+                     </div>
+                     <div class="market__item griditem">
+                        <div class="griditem__image _blue">
+                           <img src="img/market/nft.svg" alt="">
+                        </div>
+                        <div class="griditem__name">
+                           Название NFT
+                        </div>
+                        <div class="griditem__collection">
+                           Название коллекции
+                        </div>
+                     </div>
+                     <div class="market__item griditem">
+                        <div class="griditem__image _blue">
+                           <img src="img/market/nft.svg" alt="">
+                        </div>
+                        <div class="griditem__name">
+                           Название NFT
+                        </div>
+                        <div class="griditem__collection">
+                           Название коллекции
+                        </div>
+                     </div>
+                     <div class="market__item griditem">
+                        <div class="griditem__image _blue">
+                           <img src="img/market/nft.svg" alt="">
+                        </div>
+                        <div class="griditem__name">
+                           Название NFT
+                        </div>
+                        <div class="griditem__collection">
+                           Название коллекции
+                        </div>
+                     </div>
+                     <div class="market__item griditem">
+                        <div class="griditem__image _blue">
+                           <img src="img/market/nft.svg" alt="">
+                        </div>
+                        <div class="griditem__name">
+                           Название NFT
+                        </div>
+                        <div class="griditem__collection">
+                           Название коллекции
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div data-onmenu="collections" class="market__collections">
+                  <div class="market__sort sort">
+                     <div class="sort__search">
+                        <span>
+                           <img src="img/search.svg" alt="">
+                        </span>
+                        <input type="text" class="input__search" placeholder="Поиск">
+                     </div>
+                     <div class="sort__by dropdown">
+                        <div class="dropdown__main">Сначала новые</div>
+                        <span></span>
+                        <div class="dropdown__menu">
+                           <div class="dropdown__item active">Сначала новые</div>
+                           <div class="dropdown__item">Сначала старые</div>
+                           <div class="dropdown__item">Сначала дешевые</div>
+                           <div class="dropdown__item">Сначала дорогие</div>
+                        </div>
+                     </div>
+                     <div class="sort__filter">Фильтр</div>
+                     <div class="sort__colect dropdown">
+                        <div class="dropdown__main">TitiMiti</div>
+                        <span></span>
+                        <div class="dropdown__menu">
+                           <div class="dropdown__item active">TitiMiti</div>
+                           <div class="dropdown__item">Zoomloupe</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="market__table table _3">
+                     <div class="table__item head">
+                        <div>Коллекции</div>
+                        <div>Дневной объем</div>
+                        <div>Минимальная цена</div>
+                     </div>
+                     <div class="table__item">
+                        <div class="table__name">
+                           <img src="img/popular/01.png" alt="nft">
+                           <span>NFT Антарктиды</span>
+                        </div>
+                        <div class="table__volume">
+                           <div>
+                              21.37 <span>ETH</span>
+                           </div>
+                        </div>
+                        <div class="table__price">
+                           <div>
+                              1.47 <span>ETH</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="table__item">
+                        <div class="table__name">
+                           <img src="img/popular/02.png" alt="nft">
+                           <span>NFT Баржи</span>
+                        </div>
+                        <div class="table__volume">
+                           <div>
+                              81.37 <span>ETH</span>
+                           </div>
+                        </div>
+                        <div class="table__price">
+                           <div>
+                              10.3 <span>ETH</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="table__item">
+                        <div class="table__name">
+                           <img src="img/popular/03.png" alt="nft">
+                           <span>NFT Австралии</span>
+                        </div>
+                        <div class="table__volume">
+                           <div>
+                              101.37 <span>ETH</span>
+                           </div>
+                        </div>
+                        <div class="table__price">
+                           <div>
+                              0.47 <span>ETH</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="table__item">
+                        <div class="table__name">
+                           <img src="img/popular/01.png" alt="nft">
+                           <span>NFT Шашала на Бали</span>
+                        </div>
+                        <div class="table__volume">
+                           <div>
+                              1.37 <span>ETH</span>
+                           </div>
+                        </div>
+                        <div class="table__price">
+                           <div>
+                              0.47 <span>ETH</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="table__item">
+                        <div class="table__name">
+                           <img src="img/popular/01.png" alt="nft">
+                           <span>NFT Дома Билана</span>
+                        </div>
+                        <div class="table__volume">
+                           <div>
+                              421.37 <span>ETH</span>
+                           </div>
+                        </div>
+                        <div class="table__price">
+                           <div>
+                              401.01 <span>ETH</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="footer">
+         <div class="footer__container container">
+            <div class="footer__logo logo">TitiMiti.Shop</div>
+            <div class="footer__icons">
+               <a class="footer__icon">
+                  <img src="img/footer/twiter.svg" alt="">
+               </a>
+               <a class="footer__icon">
+                  <img src="img/footer/tg.svg" alt="">
+               </a>
+               <a class="footer__icon">
+                  <img src="img/footer/insta.svg" alt="">
+               </a>
+               <a class="footer__icon">
+                  <img src="img/footer/ds.svg" alt="">
+               </a>
+            </div>
+            <a href="mailto:info@titimiti.com" class=" footer__email">info@titimiti.com</a>
+            <div class="footer__poweredby">
+               <p>Powered by</p>
+               <img src="img/polygon.svg" alt="powered by">
+            </div>
+            <a class="footer__privacy" href="http://167.235.245.246/policy.html">
+               Privacy policy and Terms of use Copyright © 2010-2022 DeSo. All rights reserved.
+            </a>
+         </div>
+      </footer>
+   </div>
+   <div>
+      <div data-topopup="1" class="btn">Предложение покупки</div>
+      <div data-topopup="2" class="btn">Вам предлагают покупку</div>
+      <div data-topopup="3" class="btn">Вам предлагают обмен</div>
+      <div data-topopup="4" class="btn">Предложение обмена</div>
+      <div data-topopup="5" class="btn">Выбор метода продажи</div>
+      <div data-topopup="6" class="btn">Покупка</div>
+   </div>
+   <div data-popup="1" class="popup dn">
+      <div class="popup__container popup-purchase">
+         <div class="popup-purchase__closebtn closebtn"></div>
+         <div class="popup-purchase__title popup__title">
+            Введите свою цену
+         </div>
+         <div class="popup-purchase__info popup__info">
+            <p>Вы предлагаете купить вашу NFT</p>
+         </div>
+         <div class="popup-purchase__deadline dropdown">
+            <div class="dropdown__main">Срок предложения</div>
+            <span></span>
+            <div class="dropdown__menu">
+               <div class="dropdown__item">1 день</div>
+               <div class="dropdown__item">1 неделя</div>
+               <div class="dropdown__item">1 месяц</div>
+            </div>
+         </div>
+         <div class="popup-purchase__price">
+            <div class="popup-purchase__input">
+               <input placeholder="Введите сумму" type="number" min="0">
+            </div>
+            <div class="popup-purchase__val dropdown">
+               <div class="dropdown__main">ETH</div>
+               <span></span>
+               <div class="dropdown__menu">
+                  <div class="dropdown__item active">ETH</div>
+                  <div class="dropdown__item">USD</div>
+                  <div class="dropdown__item">RUB</div>
+               </div>
+            </div>
+         </div>
+         <div class="popup-purchase__button btn white">
+            Продолжить
+         </div>
+      </div>
+   </div>
+   <div data-popup="2" class="popup dn">
+      <div class="popup__container popup-sale">
+         <div class="popup-sale__closebtn closebtn"></div>
+         <div class="popup-sale__title popup__title">
+            Предложение покупки
+         </div>
+         <div class="popup-sale__info popup__info">
+            <p>Вам предлагают продать вашу NFT за сколько-то</p>
+         </div>
+         <div class="popup-sale__buttons">
+            <div class="popup-sale__button btn white">
+               Продолжить
+            </div>
+            <div class="popup-sale__button btn">
+               Своя цена
+            </div>
+            <div class="popup-sale__button btn">
+               Отклонить
+            </div>
+         </div>
+      </div>
+   </div>
+   <div data-popup="3" class="popup dn">
+      <div class="popup__container popup-offer">
+         <div class="popup-offer__closebtn closebtn"></div>
+         <div class="popup-offer__title popup__title">
+            Предложение обмена
+         </div>
+         <div class="popup-offer__info popup__info">
+            <p>Вам предлагают обменять вашу NFT</p>
+         </div>
+         <div class="popup-offer__items offer-items">
+            <div class="offer-items__title">
+               Предложение
+            </div>
+            <div class="offer-items__list">
+               <div class="offer-items__item">
+                  <img src="img/popular/01.png" alt="">
+               </div>
+               <div class="offer-items__item">
+                  <img src="img/popular/01.png" alt="">
+               </div>
+               <div class="offer-items__item">
+                  <img src="img/popular/01.png" alt="">
+               </div>
+               <div class="offer-items__item">
+                  <img src="img/popular/01.png" alt="">
+               </div>
+            </div>
+         </div>
+         <div class="popup-offer__buttons">
+            <div class="popup-offer__button btn white">
+               Принять обмен
+            </div>
+            <div class="popup-offer__button btn">
+               Отклонить
+            </div>
+         </div>
+      </div>
+   </div>
+   <div data-popup="4" class="popup dn">
+      <div class="popup__container popup-offer mine">
+         <div class="popup-offer__closebtn closebtn"></div>
+         <div class="popup-offer__backbtn backbtn">
+            <img src="img/arr-grey.svg" alt="">
+         </div>
+         <div class="popup-offer__title popup__title">
+            Обмен
+         </div>
+         <div class="popup-offer__info popup__info">
+            <p>Вы собираетесь обменяться на такую-то NFT</p>
+         </div>
+         <div class="popup-offer__items offer-items">
+            <div class="offer-items__title">
+               Ваши NFT
+            </div>
+            <div class="offer-items__list">
+               <div class="offer-items__item">
+                  <img src="img/popular/01.png" alt="">
+               </div>
+               <div class="offer-items__item">
+                  <img src="img/popular/01.png" alt="">
+               </div>
+               <div class="offer-items__item">
+                  <img src="img/popular/01.png" alt="">
+               </div>
+               <div class="offer-items__item">
+                  <img src="img/popular/01.png" alt="">
+                  <span>+3</span>
+               </div>
+            </div>
+         </div>
+         <div class="popup-offer__buttons">
+            <div class="popup-offer__button btn white">
+               Предложить обмен
+            </div>
+         </div>
+      </div>
+   </div>
+   <div data-popup="5" class="popup dn">
+      <div class="popup__container popup-sell">
+         <div class="popup-sell__closebtn closebtn"></div>
+         <div class="popup-sell__title popup__title">
+            Продажа NFT
+         </div>
+         <div class="popup-sell__info popup__info">
+            <p>Выберите метод продажи</p>
+         </div>
+         <div class="popup-sell__content">
+            <div class="popup-sell__item fix">
+               По фиксированной цене
+               <span><img src="../img/v_znak.svg" alt=""></span>
+            </div>
+            <div class="popup-sell__item auct">
+               По системе аукцион
+               <span><img src="../img/v_znak.svg" alt=""></span>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div data-popup="fix" class="popup dn">
+      <div class="popup__container popup-purchase sellFixPrice">
+         <div class="popup-purchase__closebtn closebtn"></div>
+         <div class="popup-offer__backbtn backbtn">
+            <img src="img/arr-grey.svg" alt="">
+         </div>
+         <div class="popup-purchase__title popup__title">
+            Фиксированная цена
+         </div>
+         <div class="popup-purchase__deadline dropdown">
+            <div class="dropdown__main">Срок предложения</div>
+            <span></span>
+            <div class="dropdown__menu">
+               <div class="dropdown__item">1 день</div>
+               <div class="dropdown__item">1 неделя</div>
+               <div class="dropdown__item">1 месяц</div>
+            </div>
+         </div>
+         <div class="popup-purchase__price">
+            <div class="popup-purchase__input">
+               <input placeholder="Введите сумму" type="number" min="0">
+            </div>
+            <div class="popup-purchase__val dropdown">
+               <div class="dropdown__main">ETH</div>
+               <span></span>
+               <div class="dropdown__menu">
+                  <div class="dropdown__item active">ETH</div>
+                  <div class="dropdown__item">USD</div>
+                  <div class="dropdown__item">RUB</div>
+               </div>
+            </div>
+         </div>
+         <div class="popup-purchase__totalPrice">
+            <p>Комиссия <span>4 <span>%</span> </span> </p>
+            <p>Вы получите <span>30.37 <span>ETH</span> </span> </p>
+         </div>
+         <div class="popup-purchase__button btn white">
+            Продолжить
+         </div>
+      </div>
+   </div>
+   <div data-popup="auct" class="popup dn">
+      <div class="popup__container popup-purchase sellAuct">
+         <div class="popup-purchase__closebtn closebtn"></div>
+         <div class="popup-offer__backbtn backbtn">
+            <img src="img/arr-grey.svg" alt="">
+         </div>
+         <div class="popup-purchase__title popup__title">
+            Метод аукциона
+         </div>
+         <div class="popup-purchase__deadline dropdown">
+            <div class="dropdown__main">По самой высокой ставке</div>
+            <span></span>
+            <div class="dropdown__menu">
+               <div class="dropdown__item">По самой высокой ставке</div>
+               <div class="dropdown__item">По самой низкой ставке</div>
+            </div>
+         </div>
+         <div class="popup-purchase__deadline dropdown">
+            <div class="dropdown__main">Срок предложения</div>
+            <span></span>
+            <div class="dropdown__menu">
+               <div class="dropdown__item">1 день</div>
+               <div class="dropdown__item">1 неделя</div>
+               <div class="dropdown__item">1 месяц</div>
+            </div>
+         </div>
+         <div class="popup-purchase__price">
+            <div class="popup-purchase__input">
+               <input placeholder="Введите сумму" type="number" min="0">
+            </div>
+            <div class="popup-purchase__val dropdown">
+               <div class="dropdown__main">ETH</div>
+               <span></span>
+               <div class="dropdown__menu">
+                  <div class="dropdown__item active">ETH</div>
+                  <div class="dropdown__item">USD</div>
+                  <div class="dropdown__item">RUB</div>
+               </div>
+            </div>
+         </div>
+         <div class="popup-purchase__price _instant">
+            <div class="popup-purchase__input">
+               <input placeholder="Мгновенная покупка" type="number" min="0">
+            </div>
+            <div class="popup-purchase__val dropdown">
+               <div class="dropdown__main">ETH</div>
+               <span></span>
+               <div class="dropdown__menu">
+                  <div class="dropdown__item active">ETH</div>
+                  <div class="dropdown__item">USD</div>
+                  <div class="dropdown__item">RUB</div>
+               </div>
+            </div>
+         </div>
+         <div class="popup-purchase__checkbox filter__checkbox">
+            <div class="checkbox-item">
+               <input type="checkbox" name="ready-to-trade" id="ready-to-trade">
+               <label for="ready-to-trade">Готов к обмену</label>
+            </div>
+         </div>
+         <div class="popup-purchase__totalPrice">
+            <p>Комиссия <span>4 <span>%</span> </span> </p>
+            <p>Вы получите <span>30.37 <span>ETH</span> </span> </p>
+         </div>
+         <div class="popup-purchase__button btn white">
+            Продолжить
+         </div>
+      </div>
+   </div>
+   <div data-popup="6" class="popup dn">
+      <div class="popup__container popup-buy">
+         <div class="popup-buy__closebtn closebtn"></div>
+         <div class="popup-buy__title popup__title">
+            Покупка NFT
+         </div>
+         <div class="popup-buy__info popup__info">
+            <p>Вы собираетесь купить такую-то NFT</p>
+         </div>
+         <div class="popup-buy__stats stats-collection">
+            <div class="stats-collection__item">
+               <div class="stats-collection__name">
+                  Стоимость
+               </div>
+               <div class="stats-collection__value">
+                  31.7 <span>ETH</span>
+               </div>
+            </div>
+            <div class="stats-collection__item">
+               <div class="stats-collection__name">
+                  Комиссия
+               </div>
+               <div class="stats-collection__value">
+                  0 <span>%</span>
+               </div>
+            </div>
+            <div class="stats-collection__line"></div>
+            <div class="stats-collection__item">
+               <div class="stats-collection__name">
+                  Итого
+               </div>
+               <div class="stats-collection__value">
+                  31.7 <span>ETH</span>
+               </div>
+            </div>
+         </div>
+         <div class="popup-buy__buttons">
+            <div class="popup-buy__button btn white">
+               Продолжить
+            </div>
+            <div class="popup-buy__button btn dn">
+               Пополнить баланс
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+<script src="js/script.js"></script>
+<script src="js/market.js"></script>
+
+</html>

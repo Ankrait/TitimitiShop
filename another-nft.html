@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>TitiMiti.Shop</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container container">
+            <div class="header__logo logo">
+               <a href="index.html" class="desktop">TitiMiti.Shop</a>
+               <a href="index.html" class="mobile">TS</a>
+            </div>
+            <div class="header__search">
+               <input placeholder="Поиск" type="text">
+               <div class="closebtn"></div>
+            </div>
+            <div class="header__menu menu">
+               <a href="collectionZL.html" class="menu__item">Коллекции</a>
+               <a href="" class="menu__item">NFT</a>
+               <a href="market.html" class="menu__item">Продать NFT</a>
+            </div>
+            <div class="header__icons">
+               <img class="header__loop" src="img/header/loop.svg" alt="loop">
+               <img class="header__notification" src="img/header/notification.svg" alt="notification">
+               <img class="header__bag" src="img/header/bag.svg" alt="bag">
+               <img class="header__wallet" src="img/header/wallet.svg" alt="wallet">
+               <a href="profile.html"><img src="img/header/user.svg" alt="user"></a>
+            </div>
+            <div class="burger">
+               <span class="bar-top"></span>
+               <span class="bar-mid"></span>
+               <span class="bar-bot"></span>
+            </div>
+         </div>
+      </header>
+      <main class="main">
+         <div class="main__container container">
+            <div class="wallet">
+               <div class="wallet__body">
+                  <div class="closebtn"></div>
+                  <div class="wallet__title">Мой кошелек</div>
+                  <div class="wallet__number">0xe1C...B3F5</div>
+                  <div class="wallet__value">$0,00 USD</div>
+                  <div class="wallet__button btn white">Пополнить баланс</div>
+                  <div class="wallet__button btn">Выйти из кошелька</div>
+               </div>
+            </div>
+            <div class="notification">
+               <div class="notification__body">
+                  <div class="closebtn"></div>
+                  <div class="notification__title">Уведомления</div>
+                  <div class="notification__items">
+                     <div class="notification__null">
+                        У вас нет<br> уведомлений
+                     </div>
+                     <div class="notification__item">
+                        <div class="notification__name">
+                           Запрос на покупку NFT
+                        </div>
+                        <div class="notification__description">
+                           Вам поступило предложение о покупке NFT из вашей коллекции “Название NFT”.
+                        </div>
+                     </div>
+                     <div class="notification__item">
+                        <div class="notification__name">
+                           Запрос отклонен
+                        </div>
+                        <div class="notification__description">
+                           Владелец “Название NFT” отклонил предложение
+                        </div>
+                     </div>
+                     <div class="notification__item">
+                        <div class="notification__name">
+                           Запрос отклонен
+                        </div>
+                        <div class="notification__description">
+                           Владелец “Название NFT” отклонил предложение
+                        </div>
+                     </div>
+                     <div class="notification__item">
+                        <div class="notification__name">
+                           Вы купили NFT
+                        </div>
+                        <div class="notification__description">
+                           Поздравляем! Вы купили “Название NFT”.
+                        </div>
+                     </div>
+                     <div class="notification__item">
+                        <div class="notification__name">
+                           Вы продали NFT
+                        </div>
+                        <div class="notification__description">
+                           Поздравляем! Вы продали “Название NFT” за $100.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="notification__button btn">Посмотреть все</div>
+               </div>
+            </div>
+            <div class="bag">
+               <div class="bag__body">
+                  <div class="closebtn"></div>
+                  <div class="bag__title">
+                     Корзина
+                     <span class="bag__reset">Очистить</span>
+                  </div>
+                  <div class="bag__items">
+                     <div class="bag__null">
+                        Корзина пуста
+                     </div>
+                     <div class="bag__item">
+                        <div class="bag__image">
+                           <img src="img/popular/01.png" alt="">
+                        </div>
+                        <div class="bag__info">
+                           <div class="bag__name">
+                              Название NFT
+                           </div>
+                           <div class="bag__description">
+                              TitiMiti
+                           </div>
+                           <div class="bag__price">
+                              30.37 <span>ETH</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="bag__item">
+                        <div class="bag__image">
+                           <img src="img/popular/01.png" alt="">
+                        </div>
+                        <div class="bag__info">
+                           <div class="bag__name">
+                              Название NFT
+                           </div>
+                           <div class="bag__description">
+                              TitiMiti
+                           </div>
+                           <div class="bag__price">
+                              30.37 <span>ETH</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="bag__item">
+                        <div class="bag__image">
+                           <img src="img/popular/01.png" alt="">
+                        </div>
+                        <div class="bag__info">
+                           <div class="bag__name">
+                              Название NFT
+                           </div>
+                           <div class="bag__description">
+                              TitiMiti
+                           </div>
+                           <div class="bag__price">
+                              30.37 <span>ETH</span>
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="bag__cost">
+                     Итого <span class="price">31.07</span> <span class="val">ETH</span>
+                  </div>
+                  <div class="bag__button btn white">Купить NFT</div>
+               </div>
+            </div>
+         </div>
+         <div class="another-nft nft">
+            <div class="nft__container container">
+               <div class="nft__image">
+                  <img src="img/boots.png" alt="nft">
+                  <div class="nft__gender gender-switch">
+                     <div class="gender-switch__circle male active">
+                        <img src="img/nft/male.svg" alt="">
+                     </div>
+                     <div class="gender-switch__circle female">
+                        <img src="img/nft/female.svg" alt="">
+                     </div>
+                  </div>
+                  <div class="nft__share share-btn btn">
+                     <img src="img/share.svg" alt="share">
+                  </div>
+               </div>
+               <div class="nft__about about-nft">
+                  <div class="about-nft__collection">
+                     <div class="about-nft__img">
+                        <img src="" alt="">
+                     </div>
+                     <p>Коллекция название</p>
+                     <img src="img/nft/nft-arr.svg" alt="">
+                  </div>
+                  <div class="about-nft__name">
+                     Боты обыкновенные #40342
+                  </div>
+                  <div class="about-nft__people">
+                     <div class="about-nft__person person-nft">
+                        <div class="person-nft-img">
+                           <!-- <img src="" alt=""> -->
+                        </div>
+                        <div class="person-nft__info">
+                           <div class="person-nft__who">
+                              Создатель
+                           </div>
+                           <div class="person-nft__number">
+                              0xbe7b1...595b
+                           </div>
+                        </div>
+                     </div>
+                     <div class="about-nft__person person-nft">
+                        <div class="person-nft-img">
+                           <!-- <img src="" alt=""> -->
+                        </div>
+                        <div class="person-nft__info">
+                           <div class="person-nft__who">
+                              Владелец
+                           </div>
+                           <div class="person-nft__number">
+                              0xbe7b1...595b
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="about-nft__line"></div>
+                  <div class="about-nft__price price-nft">
+                     <div class="price-nft__item">
+                        <div class="price-nft__title">
+                           Стоимость
+                        </div>
+                        <div class="price-nft__current">
+                           400.27 <span>ETH</span>
+                        </div>
+                        <div class="price-nft__start">
+                           $400
+                        </div>
+                     </div>
+                     <div class="price-nft__item">
+                        <div class="price-nft__title">
+                           Самая высокая ставка
+                        </div>
+                        <div class="price-nft__current">
+                           220.27 <span>ETH</span>
+                        </div>
+                        <div class="price-nft__start">
+                           $220
+                        </div>
+                     </div>
+                  </div>
+                  <div class=" about-nft__buttons">
+                     <div class="about-nft__btn sell btn white">
+                        Купить NFT
+                     </div>
+                     <div class="about-nft__btn sell btn">
+                        Сделать ставку
+                     </div>
+                  </div>
+               </div>
+               <div class="nft__information">
+                  <ul class="nft__menu line-menu">
+                     <li data-menu="review" class="line-menu__item active">Обзор</li>
+                     <li data-menu="history" class="line-menu__item">История</li>
+                     <li data-menu="request" class="line-menu__item">Ставки</li>
+                  </ul>
+                  <div data-onmenu="review" class="nft__review review active">
+                     <div class="review__description">
+                        <div class="review__title">Описание</div>
+                        <div class="review__text">
+                           Lorem ipsum dolor sit amet consectetur. Sollicitudin lectus habitasse eget pharetra sit
+                           gravida eu risus id. Diam amet in libero semper nibh.
+                        </div>
+                     </div>
+                     <div class="review__lastbet">
+                        <div class="review__title">Последняя ставка</div>
+                        <div class="history__item">
+                           <div class="history__who">
+                              <div class="history__image"></div>
+                              <div class="history__txt">
+                                 <div class="history__number">
+                                    0xbe7b1...595b <span class="history__action">сделал ставку</span>
+                                 </div>
+                                 <div class="history__time">
+                                    5 минут назад
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="history__price">
+                              <div class="history__last-price">
+                                 400.27 <span>ETH</span>
+                              </div>
+                              <div class="history__first-price">
+                                 $400
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="review__details">
+                        <div class="review__title">Детали</div>
+                        <div class="review__detail">
+                           <div class="review__icon">
+                              <img src="img/nft/details01.svg" alt="">
+                           </div>
+                           <div class="review__text">
+                              ERC-721
+                           </div>
+                        </div>
+                        <div class="review__detail">
+                           <div class="review__icon">
+                              <img src="img/nft/details02.svg" alt="">
+                           </div>
+                           <div class="review__text">
+                              Посмотреть на Polygonscan
+                           </div>
+                        </div>
+                        <div class="review__detail">
+                           <div class="review__icon">
+                              <img src="img/nft/details03.svg" alt="">
+                           </div>
+                           <div class="review__text">
+                              Обновить метаданные
+                           </div>
+                        </div>
+                        <div class="review__detail">
+                           <div class="review__icon">
+                              <img src="img/nft/details04.svg" alt="">
+                           </div>
+                           <div class="review__text">
+                              Открыть оригинал
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
+                  <div data-onmenu="history" class="nft__history history">
+                     <div class="history__item">
+                        <div class="history__who">
+                           <div class="history__image">
+                              <!-- <img src="" alt=""> -->
+                           </div>
+                           <div class="history__txt">
+                              <div class="history__number">
+                                 0xbe7b1...595b <span class="history__action">выставил на продажу</span>
+                              </div>
+                              <div class="history__time">
+                                 5 минут назад
+                              </div>
+                           </div>
+                        </div>
+                        <div class="history__price">
+                           <div class="history__last-price">
+                              400.27 <span>ETH</span>
+                           </div>
+                           <div class="history__first-price">
+                              $400
+                           </div>
+                        </div>
+                     </div>
+                     <div class="history__item">
+                        <div class="history__who">
+                           <div class="history__image"></div>
+                           <div class="history__txt">
+                              <div class="history__number">
+                                 0xbe7b1...595b <span class="history__action">купил</span>
+                              </div>
+                              <div class="history__time">
+                                 5 минут назад
+                              </div>
+                           </div>
+                        </div>
+                        <div class="history__price">
+                           <div class="history__last-price">
+                              320.27 <span>ETH</span>
+                           </div>
+                           <div class="history__first-price">
+                              $320
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div data-onmenu="request" class="nft__request history">
+                     <div class="history__item">
+                        <div class="history__who">
+                           <div class="history__image"></div>
+                           <div class="history__txt">
+                              <div class="history__number">
+                                 0xbe7b1...595b <span class="history__action">сделал ставку</span>
+                              </div>
+                              <div class="history__time">
+                                 5 минут назад
+                              </div>
+                           </div>
+                        </div>
+                        <div class="history__price">
+                           <div class="history__last-price">
+                              400.27 <span>ETH</span>
+                           </div>
+                           <div class="history__first-price">
+                              $400
+                           </div>
+                        </div>
+                     </div>
+                     <div class="history__item ">
+                        <div class="history__who">
+                           <div class="history__image"></div>
+                           <div class="history__txt">
+                              <div class="history__number">
+                                 0xbe7b1...595b <span class="history__action">сделал ставку</span>
+                              </div>
+                              <div class="history__time">
+                                 5 минут назад
+                              </div>
+                           </div>
+                        </div>
+                        <div class="history__price">
+                           <div class="history__last-price">
+                              400.27 <span>ETH</span>
+                           </div>
+                           <div class="history__first-price">
+                              $400
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="nftSameItems container">
+            <div class="nftSameItems__title title">
+               NFT из этой коллекции
+            </div>
+            <div class="nftSameItems__list griditems">
+               <div class="inventory__item griditem">
+                  <div class="griditem__image _blue">
+                     <img src="img/market/nft.svg" alt="">
+                  </div>
+                  <div class="griditem__name">
+                     Название NFT
+                  </div>
+                  <div class="griditem__collection">
+                     Название коллекции
+                  </div>
+               </div>
+               <div class="inventory__item griditem">
+                  <div class="griditem__image _blue">
+                     <img src="img/market/nft.svg" alt="">
+                  </div>
+                  <div class="griditem__name">
+                     Название NFT
+                  </div>
+                  <div class="griditem__collection">
+                     Название коллекции
+                  </div>
+               </div>
+               <div class="inventory__item griditem">
+                  <div class="griditem__image _blue">
+                     <img src="img/market/nft.svg" alt="">
+                  </div>
+                  <div class="griditem__name">
+                     Название NFT
+                  </div>
+                  <div class="griditem__collection">
+                     Название коллекции
+                  </div>
+               </div>
+               <div class="inventory__item griditem">
+                  <div class="griditem__image _blue">
+                     <img src="img/market/nft.svg" alt="">
+                  </div>
+                  <div class="griditem__name">
+                     Название NFT
+                  </div>
+                  <div class="griditem__collection">
+                     Название коллекции
+                  </div>
+               </div>
+               <div class="inventory__item griditem">
+                  <div class="griditem__image _blue">
+                     <img src="img/market/nft.svg" alt="">
+                  </div>
+                  <div class="griditem__name">
+                     Название NFT
+                  </div>
+                  <div class="griditem__collection">
+                     Название коллекции
+                  </div>
+               </div>
+               <div class="inventory__item griditem">
+                  <div class="griditem__image _blue">
+                     <img src="img/market/nft.svg" alt="">
+                  </div>
+                  <div class="griditem__name">
+                     Название NFT
+                  </div>
+                  <div class="griditem__collection">
+                     Название коллекции
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="footer">
+         <div class="footer__container container">
+            <div class="footer__logo logo">TitiMiti.Shop</div>
+            <div class="footer__icons">
+               <a class="footer__icon">
+                  <img src="img/footer/twiter.svg" alt="">
+               </a>
+               <a class="footer__icon">
+                  <img src="img/footer/tg.svg" alt="">
+               </a>
+               <a class="footer__icon">
+                  <img src="img/footer/insta.svg" alt="">
+               </a>
+               <a class="footer__icon">
+                  <img src="img/footer/ds.svg" alt="">
+               </a>
+            </div>
+            <a href="mailto:info@titimiti.com" class=" footer__email">info@titimiti.com</a>
+            <div class="footer__poweredby">
+               <p>Powered by</p>
+               <img src="img/polygon.svg" alt="powered by">
+            </div>
+            <a class="footer__privacy" href="http://167.235.245.246/policy.html">
+               Privacy policy and Terms of use Copyright © 2010-2022 DeSo. All rights reserved.
+            </a>
+         </div>
+      </footer>
+   </div>
+</body>
+<script src="js/script.js"></script>
+<script src="js/nft.js"></script>
+
+</html>
