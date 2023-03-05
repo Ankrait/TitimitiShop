@@ -69,7 +69,7 @@ document.querySelector(".header__search .closebtn").addEventListener("click", ()
 
 ///////////////// Перенос Блока /////////////////
 const tableResize = () => {
-   const table_item = document.querySelectorAll(".toptitiland .table__item");
+   const table_item = document.querySelectorAll(".table._3 .table__item");
 
    if (table_item.length > 0)
       table_item.forEach(el => {
@@ -91,11 +91,12 @@ const tableResize = () => {
       tables.forEach(table => {
          const btn = table.querySelector(".popular__btn");
          const head = table.querySelector(".popular__head");
-         if (window.matchMedia('screen and (max-width: 700px)').matches) {
-            table.append(btn);
-         } else {
-            head.append(btn);
-         }
+         if (btn)
+            if (window.matchMedia('screen and (max-width: 700px)').matches) {
+               table.append(btn);
+            } else {
+               head.append(btn);
+            }
       });
 }
 

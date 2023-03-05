@@ -31,7 +31,7 @@
                <img class="header__notification" src="img/header/notification.svg" alt="notification">
                <img class="header__bag" src="img/header/bag.svg" alt="bag">
                <img class="header__wallet" src="img/header/wallet.svg" alt="wallet">
-               <a href=""><img src="img/header/user.svg" alt="user"></a>
+               <a href="profile.html"><img src="img/header/user.svg" alt="user"></a>
             </div>
             <div class="burger">
                <span class="bar-top"></span>
@@ -172,48 +172,15 @@
                </div>
             </div>
          </div>
-         <div class="profile">
-            <div class="profile__container container">
-               <div class="profile__userinfo">
-                  <div class="profile__images img-block">
-                     <!-- <img src="" alt="main image"> -->
-                     <div class="img-block__photo">
-                        <img src="img/user.svg" alt="user photo">
-                     </div>
-                  </div>
-                  <div class="profile__info">
-                     <div>
-                        <div class="profile__name">
-                           Mr.Banan
-                        </div>
-                        <div class="profile__number">
-                           0xbe7b1...595b
-                        </div>
-                        <div class="profile__data">
-                           Присоединился 23 марта
-                        </div>
-                     </div>
-                     <div class="profile__buttons">
-                        <div class="profile__button btn">
-                           Редактировать профиль
-                        </div>
-                        <div class="profile__share share-btn btn">
-                           <img src="img/share.svg" alt="share">
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <ul class="profile__menu line-menu">
-                  <li data-menu="edit" class="line-menu__item dn">Редактирование профиля</li>
-                  <li data-menu="invent" class="line-menu__item active">Инвентарь</li>
-                  <li data-menu="empty" class="line-menu__item">На продажу</li>
-                  <li data-menu="" class="line-menu__item">На обмен</li>
-                  <li data-menu="notif" class="line-menu__item">Уведомление</li>
+         <div class="market choose">
+            <div class="market__container container">
+               <ul class="market__menu line-menu">
+                  <li class="line-menu__item active">Выберите предметы для обмена</li>
                </ul>
-               <div class="content">
-                  <div data-onmenu="invent" class="profile__inventory inventory active">
+               <div class="market__container container">
+                  <div class="market__nft active">
                      <div class="filter__bg"></div>
-                     <div class="inventory__filter filter">
+                     <div class="market__filter filter">
                         <div class="filter__title">Фильтры</div>
                         <div class="closebtn"></div>
                         <div class="filter__price">
@@ -289,7 +256,7 @@
                         <div class="filter__clear"><span>Очистить</span></div>
 
                      </div>
-                     <div class="inventory__sort sort">
+                     <div class="market__sort sort">
                         <div class="sort__search">
                            <span>
                               <img src="img/search.svg" alt="">
@@ -316,8 +283,8 @@
                         </div>
                         <div class="sort__filter">Фильтр</div>
                      </div>
-                     <div class="inventory__items griditems">
-                        <div class="inventory__item griditem">
+                     <div class="market__items griditems">
+                        <div class="market__item griditem">
                            <div class="griditem__image _blue">
                               <img src="img/market/nft.svg" alt="">
                            </div>
@@ -328,7 +295,7 @@
                               Название коллекции
                            </div>
                         </div>
-                        <div class="inventory__item griditem">
+                        <div class="market__item griditem">
                            <div class="griditem__image _blue">
                               <img src="img/market/nft.svg" alt="">
                            </div>
@@ -339,7 +306,7 @@
                               Название коллекции
                            </div>
                         </div>
-                        <div class="inventory__item griditem">
+                        <div class="market__item griditem">
                            <div class="griditem__image _blue">
                               <img src="img/market/nft.svg" alt="">
                            </div>
@@ -350,7 +317,7 @@
                               Название коллекции
                            </div>
                         </div>
-                        <div class="inventory__item griditem">
+                        <div class="market__item griditem">
                            <div class="griditem__image _blue">
                               <img src="img/market/nft.svg" alt="">
                            </div>
@@ -361,7 +328,7 @@
                               Название коллекции
                            </div>
                         </div>
-                        <div class="inventory__item griditem">
+                        <div class="market__item griditem">
                            <div class="griditem__image _blue">
                               <img src="img/market/nft.svg" alt="">
                            </div>
@@ -372,7 +339,7 @@
                               Название коллекции
                            </div>
                         </div>
-                        <div class="inventory__item griditem">
+                        <div class="market__item griditem">
                            <div class="griditem__image _blue">
                               <img src="img/market/nft.svg" alt="">
                            </div>
@@ -383,237 +350,6 @@
                               Название коллекции
                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div data-onmenu="empty" class="profile__inventory inventory">
-                     <div class="filter__bg"></div>
-                     <div class="inventory__filter filter">
-                        <div class="filter__title">Фильтры</div>
-                        <div class="closebtn"></div>
-                        <div class="filter__price">
-                           <div class="filter__btn active">
-                              <p>Цена покупки</p>
-                              <span></span>
-                           </div>
-                           <div class="filter__item active">
-                              <div class="filter__input">
-                                 <div>
-                                    <input type="number" min="0" max="1000" value="0" class="filter__price--min">
-                                 </div>
-                                 <span class="input-line"></span>
-                                 <div>
-                                    <input type="number" min="0" max="1000" value="1000" class="filter__price--max">
-                                 </div>
-                                 <div class="filter__val dropdown">
-                                    <div class="dropdown__main">ETH</div>
-                                    <span></span>
-                                    <div class="dropdown__menu">
-                                       <div class="dropdown__item active">ETH</div>
-                                       <div class="dropdown__item">USD</div>
-                                       <div class="dropdown__item">RUB</div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="filter__slider">
-                                 <div class="filter__slider-progress">
-                                 </div>
-                                 <div class="filter__slider--range">
-                                    <input type="range" class="max-value" step="0.1" value="0" min="0" max="1000">
-                                    <input type="range" class="min-value" step="0.1" value="1000" min="0" max="1000">
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="filter__type-nft">
-                           <div class="filter__btn active">
-                              <p>Вид NFT</p>
-                              <span></span>
-                           </div>
-                           <div class="filter__item active">
-                              <div class="filter__checkbox">
-                                 <div class="checkbox-item">
-                                    <input type="checkbox" name="type-nft" id="water">
-                                    <label for="water">NFT воды</label>
-                                 </div>
-                                 <div class="checkbox-item">
-                                    <input type="checkbox" name="type-nft" id="land">
-                                    <label for="land">NFT суши</label>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="filter__collection">
-                           <div class="filter__btn active">
-                              <p>Коллекция</p>
-                              <span></span>
-                           </div>
-                           <div class="filter__item active">
-                              <div class="filter__checkbox">
-                                 <div class="checkbox-item">
-                                    <input type="checkbox" name="collection" id="collection1">
-                                    <label for="collection1">NFT</label>
-                                 </div>
-                                 <div class="checkbox-item">
-                                    <input type="checkbox" name="collection" id="collection2">
-                                    <label for="collection2">NFT</label>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="filter__clear"><span>Очистить</span></div>
-
-                     </div>
-                     <div class="inventory__sort sort">
-                        <div class="sort__search">
-                           <span>
-                              <img src="img/search.svg" alt="">
-                           </span>
-                           <input type="text" class="input__search" placeholder="Поиск">
-                        </div>
-                        <div class="sort__by dropdown">
-                           <div class="dropdown__main">Сначала новые</div>
-                           <span></span>
-                           <div class="dropdown__menu">
-                              <div class="dropdown__item active">Сначала новые</div>
-                              <div class="dropdown__item">Сначала старые</div>
-                              <div class="dropdown__item">Сначала дешевые</div>
-                              <div class="dropdown__item">Сначала дорогие</div>
-                           </div>
-                        </div>
-                        <div class="sort__colect dropdown">
-                           <div class="dropdown__main">TitiMiti</div>
-                           <span></span>
-                           <div class="dropdown__menu">
-                              <div class="dropdown__item active">TitiMiti</div>
-                              <div class="dropdown__item">Zoomloupe</div>
-                           </div>
-                        </div>
-                        <div class="sort__filter">Фильтр</div>
-                     </div>
-                     <div class="griditems empty">
-                        <div class="emptyitem">
-                           <div class="emptyitem__image">
-                           </div>
-                           <div class="emptyitem__name">
-                           </div>
-                           <div class="emptyitem__collection">
-                           </div>
-                        </div>
-                        <div class="emptyitem">
-                           <div class="emptyitem__image">
-                           </div>
-                           <div class="emptyitem__name">
-                           </div>
-                           <div class="emptyitem__collection">
-                           </div>
-                        </div>
-                        <div class="emptyitem">
-                           <div class="emptyitem__image">
-                           </div>
-                           <div class="emptyitem__name">
-                           </div>
-                           <div class="emptyitem__collection">
-                           </div>
-                        </div>
-                        <div class="emptyitem">
-                           <div class="emptyitem__image">
-                           </div>
-                           <div class="emptyitem__name">
-                           </div>
-                           <div class="emptyitem__collection">
-                           </div>
-                        </div>
-                        <div class="emptyitem">
-                           <div class="emptyitem__image">
-                           </div>
-                           <div class="emptyitem__name">
-                           </div>
-                           <div class="emptyitem__collection">
-                           </div>
-                        </div>
-                        <div class="emptyitem">
-                           <div class="emptyitem__image">
-                           </div>
-                           <div class="emptyitem__name">
-                           </div>
-                           <div class="emptyitem__collection">
-                           </div>
-                        </div>
-                        <div class="emptyitem">
-                           <div class="emptyitem__image">
-                           </div>
-                           <div class="emptyitem__name">
-                           </div>
-                           <div class="emptyitem__collection">
-                           </div>
-                        </div>
-                        <div class="emptyitem">
-                           <div class="emptyitem__image">
-                           </div>
-                           <div class="emptyitem__name">
-                           </div>
-                           <div class="emptyitem__collection">
-                           </div>
-                        </div>
-                        <div class="emptyitem">
-                           <div class="emptyitem__image">
-                           </div>
-                           <div class="emptyitem__name">
-                           </div>
-                           <div class="emptyitem__collection">
-                           </div>
-                        </div>
-                        <div class="emptyitem">
-                           <div class="emptyitem__image">
-                           </div>
-                           <div class="emptyitem__name">
-                           </div>
-                           <div class="emptyitem__collection">
-                           </div>
-                        </div>
-                        <div class="empty__text">
-                           <div class="empty__title title">Ничего не найдено</div>
-                           <div class="empty__info">Мы ничего не нашли<br> с данными критериями</div>
-                        </div>
-                        <div class="shadow"></div>
-                     </div>
-                  </div>
-                  <div data-onmenu="edit" class="profile__edit edit dn">
-                     <div class="edit__input">
-                        <label for="p-name">
-                           Никнейм
-                        </label>
-                        <div class="input-edit"><input type="text" id="p-name"></div>
-                     </div>
-                     <div class="edit__input">
-                        <label for="p-email">
-                           Электронная почта
-                        </label>
-                        <div class="input-edit"><input type="text" id="p-email"></div>
-                     </div>
-                     <div class="edit__buttons">
-                        <div class="edit__button save btn white">Сохранить</div>
-                        <div class="edit__button clear btn">Отменить</div>
-                     </div>
-                  </div>
-                  <div data-onmenu="notif" class="profile__notification-profile notification-profile">
-                     <div class="notification-profile__input filter__checkbox">
-                        <input type="checkbox" id="access">
-                        <label for="access">
-                           Разрешить уведомления
-                        </label>
-                     </div>
-                     <div class="notification-profile__input filter__checkbox">
-                        <input type="checkbox" id="sound">
-                        <label for="sound">
-                           Получать уведомления со звуком
-                        </label>
-                     </div>
-                     <div class="notification-profile__input filter__checkbox">
-                        <input type="checkbox" id="noname">
-                        <label for="noname">
-                           Получать уведомления со звуком
-                        </label>
                      </div>
                   </div>
                </div>
