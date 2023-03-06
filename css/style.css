@@ -247,13 +247,13 @@ video {
   height: 12px;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%) rotate(-90deg);
+  transform: translateY(-50%) rotate(0deg);
   right: 16px;
   transition: transform 0.3s ease;
 }
 
 .dropdown.active span {
-  transform: translateY(-50%) rotate(0);
+  transform: translateY(-50%) rotate(-90deg);
 }
 
 .dropdown span::after {
@@ -713,14 +713,14 @@ video {
 
   top: 50%;
   left: 50%;
-  transform: translate(-45%, -45%);
+  transform: translate(-45%, -50%);
 }
 
-/* .left {
+.left {
   right: auto;
   left: 15px;
   transform: translateY(-50%) rotate(180deg);
-} */
+}
 
 .right {}
 
@@ -1884,11 +1884,11 @@ video {
   height: 6px;
   position: relative;
   transition: all 0.4s ease;
-  transform: rotate(-90deg);
+  transform: rotate(0deg);
 }
 
 .filter__btn.active span {
-  transform: rotate(0);
+  transform: rotate(-90deg);
 }
 
 .filter__btn span::after {
@@ -4043,6 +4043,7 @@ input[type="range"]::-moz-range-thumb {
   .choose__continue {
     display: none;
   }
+
   .choose__continue--phone {
     display: block;
   }
@@ -4116,35 +4117,54 @@ input[type="range"]::-moz-range-thumb {
     background: #393E45;
     box-shadow: 0px 0px 8px #393e45;
   }
+
   .popup-purchase__val .dropdown__main:hover {
     background: #585e64;
   }
-  .popup-purchase__price input:hover {
+
+  .popup-purchase__price input:not(:focus):hover {
     background: #585e64;
   }
+
   .popup-purchase__deadline .dropdown__main:hover {
     background: #585e64;
   }
-  .edit__input input:hover {
+
+  .edit__input input:not(:focus):hover {
     background: #33383d;
   }
-  .sort__search input:hover {
+
+  .sort__search input:not(:focus):hover {
     background: #33383d;
   }
+
   .filter__clear span:hover {
     text-decoration: underline;
   }
-  .filter__input input:hover {
+
+  .filter__input input:not(:focus):hover {
     background: #33383d;
   }
+
   .filter__val .dropdown__main:hover {
     background: #56595e;
   }
-  .header__search input:hover {
+
+  .header__search input:not(:focus):hover {
     background: #33383d;
   }
+
   .dropdown__main:hover {
     background: #33383d;
+  }
+
+  .home-pg__array {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .home-pg__image:hover .home-pg__array {
+    opacity: 1;
   }
 }
 
