@@ -325,7 +325,7 @@ video {
 
 .dropdown__item {
   cursor: pointer;
-  padding: 10px;
+  padding: 10px 16px;
 }
 
 
@@ -1783,7 +1783,7 @@ video {
 
 .market__nft {
   display: none;
-  gap: 30px;
+  gap: 30px 42px;
   grid-template: 36px 1fr/300px 1fr;
   grid-template-areas:
     "opt sort"
@@ -1953,6 +1953,10 @@ video {
   background: #393E45;
   padding: 6px 8px;
   min-width: 72px;
+}
+
+.filter__val .dropdown__item {
+  padding: 10px 8px;
 }
 
 .filter__val.active .dropdown__main {
@@ -2416,31 +2420,33 @@ input[type="range"]::-moz-range-thumb {
 .emptyitem {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  border: 1px solid #232629;
+  gap: 6px;
+  border: 1px solid #25282C;
   padding: 8px;
   border-radius: 15px;
 }
 
 .emptyitem__image {
-  flex: 0 1 150px;
+  flex: 0 1 160px;
   width: 100%;
-  background: #232629;
+  background: #393E45;
   border-radius: 10px;
+
+  margin: 0 0 6px 0;
 }
 
 .emptyitem__name {
   width: 100%;
-  max-width: 100px;
-  height: 20px;
-  background: #232629;
+  max-width: 110px;
+  height: 12px;
+  background: #393E45;
 }
 
 .emptyitem__collection {
-  max-width: 150px;
+  max-width: 70px;
   width: 100%;
-  height: 20px;
-  background: #232629;
+  height: 8px;
+  background: #393E45;
 }
 
 .empty__text {
@@ -2585,7 +2591,7 @@ input[type="range"]::-moz-range-thumb {
 
 .inventory {
   display: none;
-  gap: 30px;
+  gap: 30px 42px;
   grid-template: 36px 1fr/300px 1fr;
   grid-template-areas:
     "opt sort"
@@ -2995,6 +3001,10 @@ input[type="range"]::-moz-range-thumb {
   line-height: 24px;
 
   margin: 0 0 12px 0;
+}
+
+.review__title.det {
+  margin: 0 0 16px 0;
 }
 
 .review__text {
@@ -3843,7 +3853,7 @@ input[type="range"]::-moz-range-thumb {
 
 .collectionZL {
   display: grid;
-  gap: 30px;
+  gap: 30px 42px;
   grid-template: 36px 1fr/300px 1fr;
   grid-template-areas:
     "opt sort"
