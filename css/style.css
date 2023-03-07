@@ -976,14 +976,11 @@ video {
   .table {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 
   .table._4 .table__item {
     display: grid;
-    /* flex-wrap: wrap;
-    align-items: flex-start; */
-    grid-template: 80px fit-content(1fr) 1fr/ 1fr 1fr;
+    grid-template: 80px fit-content(20px) 1fr/ fit-content(100px) fit-content(100px);
     gap: 8px 14px;
   }
 
@@ -1000,6 +997,11 @@ video {
   .topzoomloupe .table__volume,
   .topzoomloupe .table__price {
     order: 2;
+  }
+
+  .topzoomloupe .table__volume,
+  .topzoomloupe .table__price {
+    max-width: 200px;
   }
 
   .topzoomloupe .table__name {
@@ -1053,6 +1055,7 @@ video {
     margin: 0 0 0 0;
     display: grid;
     min-height: 80px;
+    padding: 8px 0;
     grid-template: 4fr 6fr/ 80px auto auto;
     grid-template-areas: "icon name name" "icon vol pr";
     gap: 8px 14px;

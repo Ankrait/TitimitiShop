@@ -1,6 +1,0 @@
-Убрать overflow: hidden у wrapper
-Прокуртка без jquery
-footer padding margin
-Скачущий блок((
-
-grid minmax на nft.html
